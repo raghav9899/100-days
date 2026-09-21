@@ -9,5 +9,6 @@ int main(){
     x=(-b+sqrt(d))/2*a;
     x1=(-b-sqrt(d))/(2*a);
     printf("ur answer is: %lf",x);
+    printf("ur answer is: %lf",x1);
     return 0;
 }
