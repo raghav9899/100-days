@@ -1,13 +1,18 @@
 #include <stdio.h>
 int main(){
-    char vowel,consonant;
-    printf("enter a character: ");
-    scanf("%c %c",&vowel,&consonant);
-    if(vowel=="a","e","i","o","u"){
-        printf("%c is a vowel\n",vowel);
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c",&ch);
+    if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')){
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+            printf("Vowel\n");
+        }
+        else{
+            printf("Consonant\n");
+        }
     }
     else{
-        printf("%c is a consonant\n",consonant);
+        printf("Not an alphabet\n");
     }
-return 0;
+    return 0;
 }
