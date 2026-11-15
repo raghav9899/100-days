@@ -17,10 +17,6 @@ int main(){
             scanf("%d",&b[i][j]);
         }
     }
-    if(r1!=r2 || c1!=c2){
-        printf("Matrices cannot be added\n");
-        return 0;
-    }
     for(int i=0;i<r1;i++){
         for(int j=0;j<c1;j++){
             printf("%d ",a[i][j]+b[i][j]);
